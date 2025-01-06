@@ -13,12 +13,16 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
   const toRotate = [ "Software Developer", "ETL Developer", "Data Analyst" ];
   const period = 2000;
-
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('connect');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
     }, delta);
-
     return () => { clearInterval(ticker) };
   }, [text])
 
@@ -60,8 +64,8 @@ export const Banner = () => {
                 <h2>{``} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Developer", "ETL Developer","Data Analyst"]'><span className="wrap">{text}</span></span></h2>
                   <p> I'm Prashanthi Koudi, a computer science enthusiast nearing the completion of my Master's degree. With a blend of academic knowledge and practical experience, I've been on an exciting journey to explore the vast opportunities the digital world has to offer. Outside the realm of computer science, I engage in various hobbies that fuel my creativity and enrich my life. Whether it's reading, writing, or discovering new technologies, I'm always curious and eager to learn.     </p>
                   <p> Join me in following my passions as they intersect with my career in computer science, and let's connect to explore new horizons together!</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-              </div>}
+                  <button onClick={scrollToContact}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  </div>}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>

@@ -234,7 +234,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 125px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  background-image: url('./assets/img/banner-bg2.jpeg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -258,7 +258,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color: #ffffff;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -331,7 +331,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-slider .item img {
-  width: 50%;
+  width: 30%;
   margin: 0 auto 15px auto;
 }
 .background-image-left {
@@ -470,8 +470,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 60px 0 200px 0;
+  background: linear-gradient(to right, #740f41, #4B0082, #000000);
+  padding: 60px 0 100px 0;
 }
 .contact img {
   width: 92%;
@@ -630,7 +630,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: left; /* Align text to the left */
   font-family: Arial, sans-serif; /* Cleaner typography */
   font-size: 14px; /* Adjust font size */
-  margin: 20px auto 0;
+  margin: 29px auto 0;
 }
 
 
